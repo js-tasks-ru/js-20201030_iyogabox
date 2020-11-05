@@ -19,4 +19,4 @@ export function sortStrings(arr, param = 'asc') {
   } else {
     return result;
   }
-}
+} 
