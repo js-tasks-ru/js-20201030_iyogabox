@@ -4,11 +4,9 @@
  * @returns {function} - function-getter which allow get value from object by set path
  */
 export function createGetter(path) {
+  const pathArr = path.split(".");
   return function (obj) {
-    if (Object.entries(obj).length === 0) {
-      return undefined;
-    }
-    const pathArr = path.split(".");
+    if (!Object.entries(obj).length) {return;}
     const lastObj = pathArr.reduce((akk, elem, index) => {
       if (index === 0) {
         return Object.assign({}, obj);
