@@ -28,7 +28,6 @@ export default class SortableTable {
 	  this.header = header;
 	  this.data = data;
 	  this.sorted = sorted;
-	  console.log("this.sorted = ", this.sorted);
 	  this.render();
 	}
 
@@ -37,7 +36,6 @@ export default class SortableTable {
 	  blank.innerHTML = this.table;
 	  this.element = blank.firstElementChild;
 	  this._subElements = this.subElements;
-	  console.log("this._subElements =", this._subElements.header);
 	  this.eventListener();
 	}
 	eventListener() {

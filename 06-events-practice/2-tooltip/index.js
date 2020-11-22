@@ -26,7 +26,6 @@ class Tooltip {
 	};
 	removeLisener() {
 	  document.removeEventListener("pointerover", this.showTooltip);
-	  console.log("Voice");
 	}
 	constructor() {
 	  if (Tooltip.instance) {
